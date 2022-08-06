@@ -15,7 +15,7 @@ $ npm i react-router-dom@5.3.0
 - github연동
 - firebase 프로젝트 시작
 
-### 1-1
+### 1-1 firebase settings
 
 ```shell
 $ yarn add firebase
@@ -38,4 +38,18 @@ const firebaseConfig = {
 }
 
 export default firebase.initializeApp(firebaseConfig)
+```
+
+### 1-2 .env 설정
+
+cra로 리액트 프로젝트를 시작한 경우, `.env` 설정 시 `REACT_APP`으로 시작하는 환경변수를 설정해줘야합니다.
+
+```
+REACT_APP_API_KEY=
+REACT_APP_AUTH_DOMAIN=
+REACT_APP_DATABASE_URL=
+REACT_APP_PROJECT_ID=
+REACT_APP_STORAGE_BUCKET=
+REACT_APP_MESSAGIN_ID=
+REACT_APP_APP_ID=
 ```
