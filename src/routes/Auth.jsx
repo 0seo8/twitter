@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
-import firebaseInstance, { authService } from 'fbase'
+import { authService } from 'fbase'
+import {
+  signInWithPopup,
+  GoogleAuthProvider,
+  GithubAuthProvider,
+} from 'firebase/auth'
 
 function Auth() {
   const [userInput, setUserInput] = useState({
@@ -38,7 +43,7 @@ function Auth() {
     }
   }
 
-  const toggleAccount = (prev) => {
+  const toggleAccount = () => {
     setNewAccount((prev) => !prev)
   }
 
@@ -49,11 +54,11 @@ function Auth() {
     } = event
     let provider
     if (name === 'google') {
-      provider = new firebaseInstance.auth.GoogleAuthProvider()
+      provider = new GoogleAuthProvider()
     } else if (name === 'github') {
-      provider = new firebaseInstance.auth.GithubAuthProvider()
+      provider = new GithubAuthProvider()
     }
-    const data = await authService.signInWithPopup(provider)
+    const data = await signInWithPopup(authService, provider)
     console.log(data)
   }
 
@@ -78,7 +83,7 @@ function Auth() {
         <input type="submit" value={newAccount ? 'Create Account' : 'Log In'} />
         {error}
       </form>
-      <span onClick={toggleAccount}>
+      <span onClick={toggleAccount} className="authSwitch">
         {newAccount ? 'Log In' : 'Create Account'}
       </span>
       <div>

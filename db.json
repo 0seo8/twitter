@@ -1,0 +1,53 @@
+{
+  "user": {
+    "uid": "m0g5KCqRWZOwiGd5Fk5T9LH7Ms33",
+    "email": "00seo23@gmail.com",
+    "emailVerified": true,
+    "displayName": "youngseo Roh",
+    "isAnonymous": false,
+    "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu0y3lcIbqRart6SUY0sM8Dodu4ZI0H-NL_VxDDm=s96-c",
+    "providerData": [
+      {
+        "providerId": "google.com",
+        "uid": "103795448222045640590",
+        "displayName": "youngseo Roh",
+        "email": "00seo23@gmail.com",
+        "phoneNumber": null,
+        "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu0y3lcIbqRart6SUY0sM8Dodu4ZI0H-NL_VxDDm=s96-c"
+      }
+    ],
+    "stsTokenManager": {
+      "refreshToken": "AOEOulZYuW-UWAnhDFEVqzQzbf-wdk-hXq8H_BqXEBxjcJslJf7YcbeYlp2rIDBlkRLRzZ2boDdo8IzR3F9YEUBeELuREQuqOlyp_E6i6eVJU_Mrh8rAABnxFvyesRSaMt5X8he3IGBOKmHBJHUq9soQCKiI-5WLLbhghokSDs3DDwAUPr_2xPe4VUBUVqQBGU5taDjXyzva_I4JHpz7lcvBDm-y4JMLekk5w1KapHCG8_FRTjVcMY5ngNMRz3BBz7KsAYC-yAf6IARopcmRWB4uysVct5ttdbzhM4RsTOfRzrnm4GqtfVQ7pVZvEEHnOPMnInTv94Ru8WoTke7C5QxJGzLpRdGxiMVHfvWmUgJ5rWp5RvjYbEMUaJWv1STfSvIY8FYhlQP-rOlbfknNHHC8bxjcVU7lBQ",
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkMzQwZGRiYzNjNWJhY2M0Y2VlMWZiOWQxNmU5ODM3ZWM2MTYzZWIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoieW91bmdzZW8gUm9oIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTB5M2xjSWJxUmFydDZTVVkwc004RG9kdTRaSTBILU5MX1Z4RERtPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL253aXR0ZXItZjI1ZjAiLCJhdWQiOiJud2l0dGVyLWYyNWYwIiwiYXV0aF90aW1lIjoxNjY2MTExNjEzLCJ1c2VyX2lkIjoibTBnNUtDcVJXWk93aUdkNUZrNVQ5TEg3TXMzMyIsInN1YiI6Im0wZzVLQ3FSV1pPd2lHZDVGazVUOUxIN01zMzMiLCJpYXQiOjE2NjYxMTE2MTMsImV4cCI6MTY2NjExNTIxMywiZW1haWwiOiIwMHNlbzIzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTAzNzk1NDQ4MjIyMDQ1NjQwNTkwIl0sImVtYWlsIjpbIjAwc2VvMjNAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.csCjk1qvAorc5fgb-5rRkNinG1eSGj8o2L6_t-G8JR_xMWwhkhzrWI9isB6iDIrKuLf8W2FBwhfqFGUBjMrgC1F3LlORVAbN96CLZZmP4TSKFJc8BUo-xG1tZhjA6j2jSvpQuu11OKOz5E9MD9zGUa0Zsxl2tQ39UQFjtHfoAFoZQv6GTlDzcNS4CpofrtfZnmlR_1bmdKg_VCfrrFuOI0RyOjl7wjmOK-eB1Mer_8fsG8v3hgCC4NfVApPjYJlKLPVwOE9a-aEPMm9rZOF2eAyZafiiVpYfk0QG5X17c6OKOuhez0W9BO3wQxSFMBZ25vvRzDZgAG2AmpLNe9fjBw",
+      "expirationTime": 1666115213995
+    },
+    "createdAt": "1666111613617",
+    "lastLoginAt": "1666111613618",
+    "apiKey": "AIzaSyBeaR0K5kelHin5c4mS6tUreY2XaNVl4wU",
+    "appName": "[DEFAULT]"
+  },
+  "providerId": "google.com",
+  "_tokenResponse": {
+    "federatedId": "https://accounts.google.com/103795448222045640590",
+    "providerId": "google.com",
+    "email": "00seo23@gmail.com",
+    "emailVerified": true,
+    "firstName": "youngseo",
+    "fullName": "youngseo Roh",
+    "lastName": "Roh",
+    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0y3lcIbqRart6SUY0sM8Dodu4ZI0H-NL_VxDDm=s96-c",
+    "localId": "m0g5KCqRWZOwiGd5Fk5T9LH7Ms33",
+    "displayName": "youngseo Roh",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkMzQwZGRiYzNjNWJhY2M0Y2VlMWZiOWQxNmU5ODM3ZWM2MTYzZWIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoieW91bmdzZW8gUm9oIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTB5M2xjSWJxUmFydDZTVVkwc004RG9kdTRaSTBILU5MX1Z4RERtPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL253aXR0ZXItZjI1ZjAiLCJhdWQiOiJud2l0dGVyLWYyNWYwIiwiYXV0aF90aW1lIjoxNjY2MTExNjEzLCJ1c2VyX2lkIjoibTBnNUtDcVJXWk93aUdkNUZrNVQ5TEg3TXMzMyIsInN1YiI6Im0wZzVLQ3FSV1pPd2lHZDVGazVUOUxIN01zMzMiLCJpYXQiOjE2NjYxMTE2MTMsImV4cCI6MTY2NjExNTIxMywiZW1haWwiOiIwMHNlbzIzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTAzNzk1NDQ4MjIyMDQ1NjQwNTkwIl0sImVtYWlsIjpbIjAwc2VvMjNAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.csCjk1qvAorc5fgb-5rRkNinG1eSGj8o2L6_t-G8JR_xMWwhkhzrWI9isB6iDIrKuLf8W2FBwhfqFGUBjMrgC1F3LlORVAbN96CLZZmP4TSKFJc8BUo-xG1tZhjA6j2jSvpQuu11OKOz5E9MD9zGUa0Zsxl2tQ39UQFjtHfoAFoZQv6GTlDzcNS4CpofrtfZnmlR_1bmdKg_VCfrrFuOI0RyOjl7wjmOK-eB1Mer_8fsG8v3hgCC4NfVApPjYJlKLPVwOE9a-aEPMm9rZOF2eAyZafiiVpYfk0QG5X17c6OKOuhez0W9BO3wQxSFMBZ25vvRzDZgAG2AmpLNe9fjBw",
+    "context": "",
+    "oauthAccessToken": "ya29.a0Aa4xrXNKnTDTcTvK1lPDQP1521l62jYtGJhz0BPcu4_xLLfyG7dZYKD1Kk_XO5WOPisiCzTRRykcx4Qx9WssjK4Jwji0snbneDLBX4v0lMBW-ueKouwKuL-tWKBS0mXHTzbiY8GgEdB5iytBp7imhqsEoSrkCEMaCgYKATASARASFQEjDvL9xH4oEYU86vLeAKb8MqkG_A0166",
+    "oauthExpireIn": 3598,
+    "refreshToken": "AOEOulZYuW-UWAnhDFEVqzQzbf-wdk-hXq8H_BqXEBxjcJslJf7YcbeYlp2rIDBlkRLRzZ2boDdo8IzR3F9YEUBeELuREQuqOlyp_E6i6eVJU_Mrh8rAABnxFvyesRSaMt5X8he3IGBOKmHBJHUq9soQCKiI-5WLLbhghokSDs3DDwAUPr_2xPe4VUBUVqQBGU5taDjXyzva_I4JHpz7lcvBDm-y4JMLekk5w1KapHCG8_FRTjVcMY5ngNMRz3BBz7KsAYC-yAf6IARopcmRWB4uysVct5ttdbzhM4RsTOfRzrnm4GqtfVQ7pVZvEEHnOPMnInTv94Ru8WoTke7C5QxJGzLpRdGxiMVHfvWmUgJ5rWp5RvjYbEMUaJWv1STfSvIY8FYhlQP-rOlbfknNHHC8bxjcVU7lBQ",
+    "expiresIn": "3600",
+    "oauthIdToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk1NTEwNGEzN2ZhOTAzZWQ4MGM1NzE0NWVjOWU4M2VkYjI5YjBjNDUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjg3NDkwMjcyODU3LWQ1aTUwMms1YzQycHEzY243a3RnbDNlNjIzOXRzNjJsLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjg3NDkwMjcyODU3LWQ1aTUwMms1YzQycHEzY243a3RnbDNlNjIzOXRzNjJsLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNzk1NDQ4MjIyMDQ1NjQwNTkwIiwiZW1haWwiOiIwMHNlbzIzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiUU1NVnlacWx5SWdUQkRSNVZGQ2dRUSIsImlhdCI6MTY2NjExMTYxMywiZXhwIjoxNjY2MTE1MjEzfQ.RMcxWkLY-PssshJ0OIODwLQaSK7fRXWxb8Gwnm6eBNm7UK8YCCe3pfsLTEInlyV4g4BPC1-TgX3zPOddi5GPXyR7IrNOuNOvpXIYJPH__YOnXfCUMjnCLyzQvSq7cz1Y5R4jmVXRUINT1bhK2GVyvUJY9Ky_y0HEIv3jUKV74dMnEtGL7Hj0PO58P--Fo0B4nDGZVBdIz9TPCLx3pSdfM29o2pl1ObYl7cXtHO1HldANAcsIekDUtY_JQqydNgRn0gG7b3UgWHQdHdIJN1C8daU-d6u3cLTctise9jUgnD_Fka2_2VfI8gxHV4OyigRuUYMA8PBwsI_To7-tsuczrw",
+    "rawUserInfo": "{\"name\":\"youngseo Roh\",\"granted_scopes\":\"https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid\",\"id\":\"103795448222045640590\",\"verified_email\":true,\"given_name\":\"youngseo\",\"locale\":\"ko\",\"family_name\":\"Roh\",\"email\":\"00seo23@gmail.com\",\"picture\":\"https://lh3.googleusercontent.com/a/ALm5wu0y3lcIbqRart6SUY0sM8Dodu4ZI0H-NL_VxDDm=s96-c\"}",
+    "isNewUser": true,
+    "kind": "identitytoolkit#VerifyAssertionResponse"
+  },
+  "operationType": "signIn"
+}
