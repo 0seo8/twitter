@@ -1,6 +1,7 @@
 import { dbService } from 'fbase'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
+import Nweets from 'components/Nweets'
 
 function Home({ userObj }) {
   const [nweet, setNweet] = useState('')
@@ -62,9 +63,11 @@ function Home({ userObj }) {
       </form>
       <div>
         {nweets.map((nweet) => (
-          <div key={nweet.id}>
-            <h4>{nweet.text}</h4>
-          </div>
+          <Nweets
+            key={nweet.id}
+            nweetObj={nweet}
+            isOwner={nweet.creatorId === userObj.uid}
+          />
         ))}
       </div>
     </div>
