@@ -15,6 +15,8 @@ function App() {
           uid: user.uid,
           updateProfile: (args) => user.updateProfile(args),
         })
+      } else {
+        setUserObj(null)
       }
       setInit(true) //만약 init이 false라면 라우터를 숨길수 있기에 true
     })
