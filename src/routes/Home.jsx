@@ -6,20 +6,7 @@ import Nweets from 'components/Nweets'
 function Home({ userObj }) {
   const [nweet, setNweet] = useState('')
   const [nweets, setNweets] = useState([])
-
-  //db가져오기 => 아래 주석은 오래된 내용
-  // const getNweets = async () => {
-  //   const dbNnweets = await dbService.collection('nweets').get()
-  //   //querysnapShot을 리턴하기 때문에 아래와 같이 처리를 해줘야합니다.
-  //   dbNnweets.forEach((document) => {
-  //     //객체로 만듦
-  //     const nweetObject = {
-  //       ...document.data(),
-  //       id: document.id,
-  //     }
-  //     setNweets((prev) => [nweetObject, ...prev])
-  //   })
-  // }
+  const [attachment, setAttachment] = useState()
 
   useEffect(() => {
     //실시간으로 변화를 알려줌 => 리렌더링을 줄여줍니다.
@@ -49,6 +36,19 @@ function Home({ userObj }) {
     setNweet(value)
   }
 
+  const onFileChange = (e) => {
+    const { files } = e.target
+    const theFile = files[0]
+    const reader = new FileReader()
+    reader.onloadend = (finishedEvent) => {
+      const { result } = finishedEvent.currentTarget
+      setAttachment(result)
+    }
+    reader.readAsDataURL(theFile)
+  }
+
+  const onClearAttachmentClick = () => setAttachment(null)
+
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -59,7 +59,19 @@ function Home({ userObj }) {
           placeholder="What's on your mind?"
           maxLength={120}
         />
+        <input type="file" accept="image/*" onChange={onFileChange} />
         <input type="submit" value="Nweet" />
+        {attachment && (
+          <div>
+            <img
+              src={attachment}
+              width="50"
+              height="50"
+              alt="이미지 파일 미리보기"
+            />
+            <button onClick={onClearAttachmentClick}>clear</button>
+          </div>
+        )}
       </form>
       <div>
         {nweets.map((nweet) => (
