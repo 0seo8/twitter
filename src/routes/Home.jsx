@@ -7,7 +7,7 @@ import Nweets from 'components/Nweets'
 function Home({ userObj }) {
   const [nweet, setNweet] = useState('')
   const [nweets, setNweets] = useState([])
-  const [attachment, setAttachment] = useState()
+  const [attachment, setAttachment] = useState('')
 
   useEffect(() => {
     //실시간으로 변화를 알려줌 => 리렌더링을 줄여줍니다.
