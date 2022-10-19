@@ -10,17 +10,34 @@ function App() {
   useEffect(() => {
     authService.onAuthStateChanged((user) => {
       if (user) {
-        setUserObj(user)
+        setUserObj({
+          displayName: user.displayName,
+          uid: user.uid,
+          updateProfile: (args) => user.updateProfile(args),
+        })
       }
       setInit(true) //만약 init이 false라면 라우터를 숨길수 있기에 true
     })
   }, [])
 
+  const refreshUser = () => {
+    const user = authService.currentUser
+    setUserObj({
+      displayName: user.displayName,
+      uid: user.uid,
+      updateProfile: (args) => user.updateProfile(args),
+    })
+  }
+
   return (
     <>
       <BrowserRouter>
         {init ? (
-          <AppRouter isLoggedIn={Boolean(userObj)} userObj={userObj} />
+          <AppRouter
+            refreshUser={refreshUser}
+            isLoggedIn={Boolean(userObj)}
+            userObj={userObj}
+          />
         ) : (
           'Initializing...'
         )}
