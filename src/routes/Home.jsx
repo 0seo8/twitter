@@ -1,5 +1,6 @@
-import { dbService } from 'fbase'
+import { dbService, storageService } from 'fbase'
 import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import { useEffect } from 'react'
 import Nweets from 'components/Nweets'
 
@@ -21,14 +22,25 @@ function Home({ userObj }) {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    //콜렉션에 data추가
-    await dbService.collection('nweets').add({
-      //collection의 key:value형태로
+    let attachmentUrl = ''
+    if (attachment !== '') {
+      //userId로 된 폴더 생성
+      const attachmentRef = storageService
+        .ref()
+        .child(`${userObj.uid}/${uuidv4()}`)
+      const response = await attachmentRef.putString(attachment, 'data_url')
+      attachmentUrl = await response.ref.getDownloadURL()
+    }
+    const nweetObj = {
       text: nweet,
       createdAt: Date.now(),
       creatorId: userObj.uid,
-    })
+      attachmentUrl,
+    }
+
+    await dbService.collection('nweets').add(nweetObj)
     setNweet('')
+    setAttachment('')
   }
 
   const onChange = (e) => {
@@ -43,6 +55,7 @@ function Home({ userObj }) {
     reader.onloadend = (finishedEvent) => {
       const { result } = finishedEvent.currentTarget
       setAttachment(result)
+      console.log(result)
     }
     reader.readAsDataURL(theFile)
   }

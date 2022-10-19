@@ -2,8 +2,8 @@ import firebase from 'firebase/compat/app'
 //auth를 사용하고 싶은 경우
 import 'firebase/compat/auth'
 //파이어베이스 데이터베이스 사용
-import 'firebase/firestore'
 import 'firebase/compat/firestore'
+//파이어베이스 스토로지
 import 'firebase/compat/storage'
 
 const firebaseConfig = {
@@ -22,6 +22,7 @@ const firebaseInstance = firebase
 export const authService = firebase.auth()
 // db사용
 export const dbService = firebase.firestore()
-// export const storageService = firebase.storage()
+//buket
+export const storageService = firebase.storage()
 
 export default firebaseInstance
