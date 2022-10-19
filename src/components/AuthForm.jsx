@@ -7,7 +7,6 @@ const AuthForm = () => {
     email: '',
     password: '',
   })
-
   const [newAccount, setNewAccount] = useState(false)
   const changeInputHandler = (e) => {
     const { name, value } = e.target
@@ -42,13 +41,14 @@ const AuthForm = () => {
   }
   return (
     <>
-      <form onSubmit={loginHandler}>
+      <form onSubmit={loginHandler} className="container">
         <input
           placeholder="Email"
           required
           name="email"
           value={userInput.email}
           onChange={changeInputHandler}
+          className="authInput"
         />
         <input
           type="password"
@@ -57,9 +57,14 @@ const AuthForm = () => {
           required
           value={userInput.password}
           onChange={changeInputHandler}
+          className="authInput"
         />
-        <input type="submit" value={newAccount ? 'Create Account' : 'Log In'} />
-        {error}
+        <input
+          type="submit"
+          value={newAccount ? 'Create Account' : 'Log In'}
+          className="authInput authSubmit"
+        />
+        {error && <span className="authError">{error}</span>}
       </form>
       <span onClick={toggleAccount} className="authSwitch">
         {newAccount ? 'Log In' : 'Create Account'}

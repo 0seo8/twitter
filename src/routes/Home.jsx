@@ -18,9 +18,12 @@ function Home({ userObj }) {
     })
   }, [])
   return (
-    <div>
+    <div className="container">
       <NweetFactory userObj={userObj} />
-      <div>
+      <div
+        style={{ marginTop: 30 }}
+        className="flex w-full justify-center items-center"
+      >
         {nweets.map((nweet) => (
           <Nweets
             key={nweet.id}

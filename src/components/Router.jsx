@@ -3,6 +3,7 @@ import Auth from 'routes/Auth'
 import Home from 'routes/Home'
 import Navigation from './Navigation'
 import Profile from 'routes/Profile'
+import React from 'react'
 
 const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
   return (
@@ -10,13 +11,13 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
       {isLoggedIn && <Navigation userObj={userObj} />}
       <Routes>
         {isLoggedIn ? (
-          <>
+          <React.Fragment>
             <Route path="/" element={<Home userObj={userObj} />} />
             <Route
               path="/profile"
               element={<Profile userObj={userObj} refreshUser={refreshUser} />}
             />
-          </>
+          </React.Fragment>
         ) : (
           <Route path="/" element={<Auth />} />
         )}

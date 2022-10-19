@@ -44,7 +44,9 @@ function App() {
           'Initializing...'
         )}
       </BrowserRouter>
-      <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
+      <footer className="text-center mt-5">
+        &copy; {new Date().getFullYear()} Nwitter
+      </footer>
     </>
   )
 }
