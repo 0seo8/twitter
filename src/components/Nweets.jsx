@@ -1,4 +1,4 @@
-import { dbService } from 'fbase'
+import { dbService, storageService } from 'fbase'
 import React, { useState } from 'react'
 
 const Nweets = ({ nweetObj, isOwner }) => {
@@ -9,6 +9,8 @@ const Nweets = ({ nweetObj, isOwner }) => {
     const ok = window.confirm('Are you sure you want to delete this nweet?')
     if (ok) {
       await dbService.doc(`nweets/${nweetObj.id}`).delete()
+      //refFromURL을 통해 이미지 파일의 url을 가지고옴
+      await storageService.refFromURL(nweetObj.attachmentUrl).delete()
     }
   }
   const toggleEditing = () => {
